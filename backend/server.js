@@ -4,6 +4,7 @@ const app = express();
 const mongoose = require("mongoose");
 const Registration = require("./models/registrations.js");
 const Users = require("./models/Users.js");
+const Signup = require("./models/signup.js");
 const path = require("path");
 // const methodOverride = require("method-override"); //For sending POST & DELETE Request
 // const ejsMate = require("ejs-mate");
@@ -18,7 +19,7 @@ main()
 });
 
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/user');
+  await mongoose.connect('mongodb://127.0.0.1:27017/MinistryOfAYUSH');
 };
 
 // Setting up view engine
